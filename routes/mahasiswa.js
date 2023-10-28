@@ -5,6 +5,8 @@ const router = express.Router()
 const { populate } = require('dotenv')
 const Mahasiswa = require('../models/Mahasiswa')
 
+// Import verifyToken
+const verifyToken = require('../config/verifyToken')
 
 // post mahasiswa
 router.post('/', async(req, res) => {
@@ -27,7 +29,7 @@ router.post('/', async(req, res) => {
 })
 
 // GET mahasiswa
-router.get('/', async(req, res)=> {
+router.get('/', verifyToken, async(req, res)=> {
     try{
         const mahasiswa = await Mahasiswa.find().populate('Prodi').populate('dosen')
         res.json(mahasiswa)
