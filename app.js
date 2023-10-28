@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 
 // import routes
 const fakultasRoutes = require('./routes/fakultas')
-const ProdiRoutes = require('./routes/Prodi')
+const ProdiRoutes = require('./routes/prodi')
 const DosenRoutes = require('./routes/dosen')
 const MahasiswaRoutes = require('./routes/Mahasiswa')
 // 8. put routes in express

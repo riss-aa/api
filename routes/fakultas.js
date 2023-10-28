@@ -3,8 +3,6 @@
 const express = require('express')
 const router = express.Router()
 const Fakultas = require('../models/Fakultas')
-const { route } = require('./Prodi')
-
 
 // post fakultas
 router.post('/', async(req, res) => {
