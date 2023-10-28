@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 const fakultasRoutes = require('./routes/fakultas')
 const ProdiRoutes = require('./routes/prodi')
 const DosenRoutes = require('./routes/dosen')
-const MahasiswaRoutes = require('./routes/Mahasiswa')
+const MahasiswaRoutes = require('./routes/mahasiswa')
 // 8. put routes in express
 app.use('/fakultas', fakultasRoutes)
 app.use('/prodi', ProdiRoutes)
