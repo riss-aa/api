@@ -3,14 +3,15 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-
 require('dotenv/config')
+const cors = require('cors')
 
 // 6. bodyparser
 app.use(bodyParser.urlencoded({
     extended: true
 }))
 app.use(bodyParser.json())
+app.use(cors())
 
 // import routes
 const fakultasRoutes = require('./routes/fakultas')
