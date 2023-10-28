@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
 // import models
-const User = require('../models/user')
+const User = require('../models/User')
 
 // import validation 
 const { registerValidation, loginValidation } = require('../config/validation')
